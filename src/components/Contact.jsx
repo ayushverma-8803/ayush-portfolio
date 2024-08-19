@@ -19,24 +19,30 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-      body: JSON.stringify({
-        access_key: '27e281b2-b25b-4b99-8ec3-0af5b9361299',
-        ...formData,
-      }),
-    });
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: '27e281b2-b25b-4b99-8ec3-0af5b9361299', 
+          ...formData,
+        }),
+      });
 
-    const result = await res.json();
-    if (result.success) {
-      setFormStatus('Message sent successfully!');
-      setFormData({ name: '', email: '', message: '' });
-    } else {
-      setFormStatus('Error sending message. Please try again.');
+      const result = await res.json();
+      console.log(result); // Inspect the response from Web3Forms
+
+      if (result.success) {
+        setFormStatus('Message sent successfully!');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setFormStatus(`Error: ${result.message || 'Something went wrong.'}`);
+      }
+    } catch (error) {
+      setFormStatus(`Error: ${error.message || 'Something went wrong.'}`);
     }
   };
 
