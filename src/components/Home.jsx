@@ -60,7 +60,7 @@ function Home() {
             More About Me  
           </motion.a>
           <motion.a
-            href="https://drive.google.com/file/d/1MB8u3U2jHdP6HmUiAcpUZ3dBdD8xkbfc/view?usp=sharing"
+            href="https://drive.google.com/file/d/1nlgvsBfHgkvH09Kgr4VI0EAMxRP5XgbO/view?usp=sharing"
             target="_blank"
             className="px-6 py-3 bg-blue-500 rounded-full text-white font-semibold hover:bg-blue-600 transition duration-300"
             initial={{ opacity: 0, scale: 0.9 }}
