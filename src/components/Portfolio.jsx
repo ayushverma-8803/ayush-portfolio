@@ -7,7 +7,7 @@ function Portfolio() {
       title: 'Real-Time Chat Application',
       description: 'A robust real-time chat application built with React and WebSocket, featuring a sleek interface and seamless communication.',
       // image: '/assets/pro.jpg', // Ensure the path is correct
-      link: 'https://your-chat-app-demo.com'
+      link: 'https://github.com/ayushverma-8803/realTime-Chat'
     },
     {
       title: 'Mental Health Tracker',
@@ -19,7 +19,7 @@ function Portfolio() {
       title: 'Voice Assistant',
       description: 'A multi-purpose voice assistant with advanced speech recognition and natural language processing capabilities.',
       // image: '/assets/voice-assistant.jpg', // Ensure the path is correct
-      link: 'https://your-voice-assistant-demo.com'
+      link: 'https://github.com/ayushverma-8803/BumbleBee-The-Multi-Purpose-Voice-Assistant'
     }
   ];
 
