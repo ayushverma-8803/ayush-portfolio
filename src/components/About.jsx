@@ -35,7 +35,7 @@ function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              I’m a passionate developer with experience in building web applications using <strong>React</strong>, <strong>Tailwind CSS</strong>, and more. My expertise lies in creating intuitive and dynamic user interfaces that provide an exceptional user experience.
+              I’m a passionate developer with experience in building web applications using <strong>HTML</strong>, <strong>CSS</strong>, and more. My expertise lies in creating intuitive and dynamic user interfaces that provide an exceptional user experience.
             </motion.p>
             <motion.p
               className="text-base md:text-lg lg:text-xl text-gray-300 mb-6"
